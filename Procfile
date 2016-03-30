@@ -1,0 +1,1 @@
+web: gunicorn watercolor.wsgi --log-file -
