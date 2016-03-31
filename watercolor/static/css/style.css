@@ -20,10 +20,10 @@ p {
 }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 514px;
   line-height: 0;
   height: auto;
-  color: #03a9f4;
+  color: gray;
 }
   .parallax-container .section {
     width: 100%;
@@ -45,13 +45,17 @@ p {
   }
 }
 
-.icon-block {
+.works-block {
   padding: 0 15px;
 }
-.icon-block .material-icons {
+.works-block .material-icons {
   font-size: inherit;
 }
 
 footer.page-footer {
   margin: 0;
+}
+
+.info {
+  height: 300px;
 }
