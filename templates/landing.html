@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/lightbox.css' %}">
 </head>
 
 <body>
@@ -83,6 +84,41 @@
           </div>
           <div class="col s12 l9">
             <p class="flow-text">Ольга Валеева - замечательный художник, иллюстратор детских книг, постоянный модератор сообщества рисующих людей “Клуб 365”. Её любимый материал - акварель. Художница постоянно рисует с натуры: дома и в лесу, в ботаническом саду в толпе людей и на отдыхе… Цветы и травы, архитектура и животные - все поддаётся её кисти. Во время курса она щедро поделится своим опытом и поможет поверить в свои способности! </p>
+          </div>
+        </div>
+
+        <h5>Примеры работ Ольги</h5>
+        
+        <div class="row">
+          <div class="col s12 l2">
+            <a href="{% static 'images/iris_big.jpg' %}" data-lightbox="album">
+              <img class="responsive-img circle" src="{% static 'images/iris.jpg' %}">
+            </a>
+          </div>
+          <div class="col s12 l2">
+            <a href="{% static 'images/church_big.jpg' %}" data-lightbox="album">
+              <img class="responsive-img circle" src="{% static 'images/church.jpg' %}">
+            </a>
+          </div>
+          <div class="col s12 l2">
+            <a href="{% static 'images/tree_big.jpg' %}" data-lightbox="album">
+              <img class="responsive-img circle" src="{% static 'images/tree.jpg' %}">
+            </a>
+          </div>
+          <div class="col s12 l2">
+            <a href="{% static 'images/butterfly_big.jpg' %}" data-lightbox="album">
+              <img class="responsive-img circle" src="{% static 'images/butterfly.jpg' %}">
+            </a>
+          </div>
+          <div class="col s12 l2">
+            <a href="{% static 'images/undersun_big.jpg' %}" data-lightbox="album">
+              <img class="responsive-img circle" src="{% static 'images/undersun.jpg' %}">
+            </a>
+          </div>
+          <div class="col s12 l2">
+            <a href="{% static 'images/poppy_big.jpg' %}" data-lightbox="album">
+              <img class="responsive-img circle" src="{% static 'images/poppy.jpg' %}">
+            </a>
           </div>
         </div>
       </div>
@@ -352,6 +388,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="{% static 'js/materialize.js' %}"></script>
   <script src="{% static 'js/init.js' %}"></script>
+  <script src="{% static 'js/lightbox.js' %}"></script>
 
   </body>
 </html>
