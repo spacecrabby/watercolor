@@ -84,4 +84,12 @@ footer.page-footer {
   background-size: cover;
 }
 
-#test
+#programm {
+  background: white url("../images/water3.jpg");
+  background-size: cover;
+}
+
+#about {
+  background: white url("../images/water4.jpg");
+  background-size: cover;
+}
