@@ -79,6 +79,15 @@ footer.page-footer {
   background-size: cover;
 }
 
+#on-course i {
+  color: #26a69a;
+}
+
+#on-course span {
+  font-style: italic;
+  border-bottom: 1px dotted #000;
+}
+
 #teacher {
   background: white url("../images/water2.jpg");
   background-size: cover;
