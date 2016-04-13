@@ -75,12 +75,12 @@ footer.page-footer {
 }
 
 #index-banner {
-  background: white url("../images/water7.jpg");
+  background: white url("../images/water7.jpg") no-repeat center;
   background-size: cover;
 }
 
 #on-course {
-  background: white url("../images/water1.jpg");
+  background: white url("../images/water1.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -94,21 +94,21 @@ footer.page-footer {
 }
 
 #teacher {
-  background: white url("../images/water2.jpg");
+  background: white url("../images/water2.jpg") no-repeat center;
   background-size: cover;
 }
 
 #programm {
-  background: white url("../images/water3.jpg");
+  background: white url("../images/water3.jpg") no-repeat center;
   background-size: cover;
 }
 
 #place {
-  background: white url("../images/water4.jpg");
+  background: white url("../images/water4.jpg") no-repeat center;
   background-size: cover;
 }
 
 #price {
-  background: white url("../images/water5.jpg");
+  background: white url("../images/water5.jpg") no-repeat center;
   background-size: cover;
 }
