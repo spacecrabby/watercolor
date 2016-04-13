@@ -74,6 +74,11 @@ footer.page-footer {
   display:block;
 }
 
+#index-banner {
+  background: white url("../images/water7.jpg");
+  background-size: cover;
+}
+
 #on-course {
   background: white url("../images/water1.jpg");
   background-size: cover;
