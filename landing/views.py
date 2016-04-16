@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from landing.forms import ContactForm
 from django.template.loader import get_template
 from django.core.mail import EmailMessage
-from django.template import Context
+
 # Create your views here.
 
 
@@ -32,11 +32,12 @@ def landing(request):
         content = template.render(context)
 
         email = EmailMessage(
-            "New contact form submission",
+            "Новая заявка на курсы",
             content,
-            "Your website" + '',
-            ['fusee@ya.ru'],
-            headers={'Reply-To': contact_email}
+            'Лэндинг' + ' ',
+            ['watercolorsketching@gmail.com'],
+            reply_to=[contact_email],
+            headers={'Message-ID': 'foo'}
         )
         email.send()
         return redirect('/#contact')

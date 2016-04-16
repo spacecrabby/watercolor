@@ -1,11 +1,11 @@
-Contact Name:
+Имя:
 {{ contact_name }}
 
 Email:
 {{ contact_email }}
 
-Phone:
+Телефон:
 {{ contact_phone }}
 
-Content:
+Сообщение:
 {{ message }}
