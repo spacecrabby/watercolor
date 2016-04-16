@@ -1,10 +1,11 @@
 Contact Name:
-
+{{ contact_name }}
 
 Email:
-
+{{ contact_email }}
 
 Phone:
-
+{{ contact_phone }}
 
 Content:
+{{ message }}
