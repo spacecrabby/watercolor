@@ -132,8 +132,8 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # Email settings
 
-EMAIL_HOST_USER = 'fusee'
-EMAIL_HOST_PASSWORD = 'FIT37fus'
-EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'cubetalk9xmy@gmail.com'
+EMAIL_HOST_PASSWORD = 'cubetalk9'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
