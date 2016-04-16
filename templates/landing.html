@@ -287,38 +287,36 @@
           <div class="col s12 l7">
             <div class="row">
               <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s12">
+                  {% csrf_token %}
+
+                  <div class="input-field">
+                      {{ form.contact_name.errors }}
                     <i class="material-icons prefix">account_circle</i>
-                    <input id="first_name" type="text" class="validate">
-                    <label for="first_name">Имя</label>
+                    {{ form.contact_name }}
+                    <label for="{{ form.contact_name.id_for_label }}">Имя</label>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s12">
+
+                  <div class="input-field">
+                      {{ form.contact_phone.errors }}
                     <i class="material-icons prefix">phone</i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Телефон (необязательно)</label>
+                    {{ form.contact_phone }}
+                    <label for="{{ form.contact_phone.id_for_label }}">Телефон (необязательно)</label>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s12">
+
+                  <div class="input-field">
+                      {{ form.contact_email.errors }}
                     <i class="material-icons prefix">email</i>
-                    <input id="email" type="email" class="validate">
-                    <label for="email" data-error="Ошибка">Email</label>
+                    {{ form.contact_email }}
+                    <label for="{{ form.contact_email.id_for_label }}" data-error="Ошибка">Email</label>
                   </div>
-                </div>
-                <div class="row">
-                  <form class="col s12">
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix">mode_edit</i>
-                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                        <label for="icon_prefix2">Сообщение</label>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+
+                  <div class="input-field">
+                      {{ form.message.errors }}
+                    <i class="material-icons prefix">mode_edit</i>
+                    {{ form.message }}
+                    <label for="{{ form.message.id_for_label }}">Сообщение</label>
+                  </div>
+
                 <button class="btn waves-effect waves-light" type="submit" name="action">Отправить
                   <i class="material-icons right">send</i>
                 </button>
