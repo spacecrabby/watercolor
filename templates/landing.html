@@ -293,28 +293,33 @@
                       {{ form.contact_name.errors }}
                     <i class="material-icons prefix">account_circle</i>
                     {{ form.contact_name }}
-                    <label for="{{ form.contact_name.id_for_label }}">Имя</label>
+                      {{ form.contact_name.label_tag }}
+{#                    <label for="{{ form.contact_name.id_for_label }}">Имя</label>#}
                   </div>
 
                   <div class="input-field">
                       {{ form.contact_phone.errors }}
                     <i class="material-icons prefix">phone</i>
                     {{ form.contact_phone }}
-                    <label for="{{ form.contact_phone.id_for_label }}">Телефон (необязательно)</label>
+                      {{ form.contact_phone.label_tag }}
+{#                    <label for="{{ form.contact_phone.id_for_label }}">Телефон (необязательно)</label>#}
                   </div>
 
                   <div class="input-field">
                       {{ form.contact_email.errors }}
                     <i class="material-icons prefix">email</i>
                     {{ form.contact_email }}
-                    <label for="{{ form.contact_email.id_for_label }}" data-error="Ошибка">Email</label>
+{#                      {{ form.contact_email.label_tag }}#}
+                    <label for="{{ form.contact_email.id_for_label }}" data-error="Ошибка">Email:</label>
                   </div>
+
 
                   <div class="input-field">
                       {{ form.message.errors }}
                     <i class="material-icons prefix">mode_edit</i>
                     {{ form.message }}
-                    <label for="{{ form.message.id_for_label }}">Сообщение</label>
+                      {{ form.message.label_tag }}
+{#                    <label for="{{ form.message.id_for_label }}">Сообщение</label>#}
                   </div>
 
                 <button class="btn waves-effect waves-light" type="submit" name="action">Отправить

@@ -16,3 +16,10 @@ class ContactForm(forms.Form):
             attrs={'class': "materialize-textarea"},
         )
     )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['contact_name'].label = "Имя"
+        self.fields['contact_email'].label = "Email"
+        self.fields['contact_phone'].label = "Телефон"
+        self.fields['message'].label = "Сообщение"
