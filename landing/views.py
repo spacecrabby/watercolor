@@ -35,7 +35,7 @@ def landing(request):
             "New contact form submission",
             content,
             "Your website" + '',
-            ['youremail@gmail.com'],
+            ['fusee@ya.ru'],
             headers={'Reply-To': contact_email}
         )
         email.send()
