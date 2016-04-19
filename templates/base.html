@@ -20,5 +20,12 @@
         <script src="{% static 'landing/js/materialize.js' %}"></script>
         <script src="{% static 'landing/js/init.js' %}"></script>
         <script src="{% static 'landing/js/lightbox.js' %}"></script>
+        {% if anchor %}
+            <script type='text/javascript'>
+                $(document).ready(function(){
+                    window.location = '#{{ anchor }}'
+                });
+            </script>
+        {% endif %}
     </body>
 </html>

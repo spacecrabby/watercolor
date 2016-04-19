@@ -21,5 +21,5 @@ class ContactForm(forms.Form):
         super().__init__(*args, **kwargs)
         self.fields['contact_name'].label = "Имя"
         self.fields['contact_email'].label = "Email"
-        self.fields['contact_phone'].label = "Телефон"
+        self.fields['contact_phone'].label = "Телефон (необязательно)"
         self.fields['message'].label = "Сообщение"

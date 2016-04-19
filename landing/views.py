@@ -7,10 +7,11 @@ from django.core.mail import EmailMessage
 
 
 def landing(request):
-    form_class = ContactForm
+    form = ContactForm
+    context = {}
 
     if request.method == "POST":
-        form = form_class(data=request.POST)
+        form = form(data=request.POST)
 
         if form.is_valid():
 
@@ -23,25 +24,30 @@ def landing(request):
             # contact information
             template = get_template('contact_template.txt')
 
-        context = {
-            'contact_name': contact_name,
-            'contact_email': contact_email,
-            'contact_phone': contact_phone,
-            'message': message,
-        }
-        content = template.render(context)
 
-        email = EmailMessage(
-            "Новая заявка на курсы",
-            content,
-            'Лэндинг' + ' ',
-            ['watercolorsketching@gmail.com'],
-            reply_to=[contact_email],
-        )
-        email.send()
-        return redirect('/success')
+            context = {
+                'contact_name': contact_name,
+                'contact_email': contact_email,
+                'contact_phone': contact_phone,
+                'message': message,
+            }
+            content = template.render(context)
 
-    return render(request, 'landing.html', {'form': form_class})
+            email = EmailMessage(
+                "Новая заявка на курсы",
+                content,
+                'Лэндинг' + ' ',
+                ['watercolorsketching@gmail.com'],
+                reply_to=[contact_email],
+            )
+            email.send()
+            return redirect('/success')
+        else:
+            context['anchor'] = 'contact'
+
+    context['form'] = form
+
+    return render(request, 'landing.html', context)
 
 
 def success(request):
