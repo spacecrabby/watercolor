@@ -1,19 +1,9 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Акварельный скетчинг под Тарусой</title>
+{% extends "base.html" %}
+{% load staticfiles%}
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="{% static 'landing/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="{% static 'landing/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" type="text/css" href="{% static 'landing/css/lightbox.css' %}">
-</head>
+{% block title %} Акварельный скетчниг под Тарусой {% endblock %}
 
-<body>
+{% block content %}
   <div class="navbar-fixed">
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
@@ -298,7 +288,7 @@
           </div>
           <div class="col s12 l7">
             <div class="row">
-              <form class="col s12" role="form" action="" method="post">
+              <form class="col s12" role="form" action="/success" method="post">
                   {% csrf_token %}
 
                   <div class="input-field">
@@ -345,17 +335,8 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="#">Belskikh</a>
+      Made by <a class="brown-text text-lighten-3" href="">Belskikh</a>
       </div>
     </div>
   </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="{% static 'landing/js/materialize.js' %}"></script>
-  <script src="{% static 'landing/js/init.js' %}"></script>
-  <script src="{% static 'landing/js/lightbox.js' %}"></script>
-
-  </body>
-</html>
+{% endblock %}

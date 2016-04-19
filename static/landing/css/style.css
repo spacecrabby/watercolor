@@ -6,6 +6,16 @@
  * Made By MaterializeCSS.com
  */
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -62,6 +72,7 @@ p {
 
 footer.page-footer {
   margin: 0;
+    padding: 0;
 }
 
 .info {
@@ -121,3 +132,10 @@ footer.page-footer {
   background: white url("../img/water5.jpg") no-repeat center;
   background-size: cover;
 }
+
+#success {
+    background: white url("../img/water6.jpg") no-repeat center;
+  background-size: cover;
+    height: 85vh;
+}
+

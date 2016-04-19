@@ -9,4 +9,5 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.landing, name='landing'),
+    url(r'^success', views.success, name='success')
 ]

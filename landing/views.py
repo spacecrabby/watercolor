@@ -42,3 +42,7 @@ def landing(request):
         return redirect('/#contact')
 
     return render(request, 'landing.html', {'form': form_class})
+
+
+def success(request):
+    return render(request, 'success.html')
