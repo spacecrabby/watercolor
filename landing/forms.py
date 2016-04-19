@@ -11,7 +11,7 @@ class ContactForm(forms.Form):
     contact_email = forms.EmailField(required=True)
     contact_phone = forms.CharField(required=False)
     message = forms.CharField(
-        required=True,
+        required=False,
         widget=forms.Textarea(
             attrs={'class': "materialize-textarea"},
         )
@@ -23,3 +23,6 @@ class ContactForm(forms.Form):
         self.fields['contact_email'].label = "Email"
         self.fields['contact_phone'].label = "Телефон (необязательно)"
         self.fields['message'].label = "Сообщение"
+
+    def form_invalid(self, form):
+        return self.render_to_response(self.get_context_data(form=form, anchor='contact'))

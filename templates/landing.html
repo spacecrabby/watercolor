@@ -340,3 +340,12 @@
     </div>
   </footer>
 {% endblock %}
+{% block custom_scripts %}
+    {% if anchor %}
+        <script type='text/javascript'>
+            $("html, body").animate({
+                'scrollTop': $(document).height()
+            }, 1000);
+        </script>
+    {% endif %}
+{% endblock %}
