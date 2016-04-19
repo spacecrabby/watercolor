@@ -37,7 +37,6 @@ def landing(request):
             'Лэндинг' + ' ',
             ['watercolorsketching@gmail.com'],
             reply_to=[contact_email],
-            headers={'Message-ID': 'foo'}
         )
         email.send()
         return redirect('/#contact')

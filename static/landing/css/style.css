@@ -15,6 +15,18 @@ p {
   line-height: 2rem;
 }
 
+#header {
+    font-size: 5vmin;
+    line-height: 1.5;
+    margin: 0;
+    margin-top: 3%;
+}
+
+#header-small {
+    font-size: 3vmin;
+    margin-top: 9vmin;
+}
+
 .button-collapse {
   color: #26a69a;
 }
@@ -23,18 +35,7 @@ p {
   /*min-height: 514px;*/
   line-height: 0;
   height: auto;
-  color: gray;
 }
-
-.parallax-container {
-  min-height: 514px;
-  line-height: 0;
-  height: auto;
-  color: gray;
-}
-  .parallax-container .section {
-    width: 100%;
-  }
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -67,10 +68,18 @@ footer.page-footer {
   height: 300px;
 }
 
+#banner {
+    margin-bottom: 0px;
+}
+
+#thumb {
+  padding: 0px;
+}
+
 #thumb img {
   max-width:100%; 
   max-height:100%;
-  margin:auto;
+  /*margin:auto;*/
   display:block;
 }
 
