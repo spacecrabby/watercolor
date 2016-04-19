@@ -39,7 +39,7 @@ def landing(request):
             reply_to=[contact_email],
         )
         email.send()
-        return redirect('/#contact')
+        return redirect('/success')
 
     return render(request, 'landing.html', {'form': form_class})
 
