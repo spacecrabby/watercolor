@@ -118,6 +118,15 @@ footer.page-footer {
   background-size: cover;
 }
 
+#for {
+    background: white url("../img/water6.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#for i {
+  color: #26a69a;
+}
+
 #programm {
   background: white url("../img/water3.jpg") no-repeat center;
   background-size: cover;

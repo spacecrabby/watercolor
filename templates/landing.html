@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load staticfiles%}
 
-{% block title %} Акварельный скетчниг под Тарусой {% endblock %}
+{% block title %} Акварельный скетчинг под Тарусой {% endblock %}
 
 {% block content %}
   <div class="navbar-fixed">
@@ -11,6 +11,7 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="#on-course">О курсе</a></li>
           <li><a href="#teacher">Преподаватель</a></li>
+            <li><a href="#for">Для кого</a></li>
           <li><a href="#programm">Программа</a></li>
           <li><a href="#place">Место</a></li>
           <li><a href="#price">Цены</a></li>
@@ -20,6 +21,7 @@
         <ul id="nav-mobile" class="side-nav">
           <li><a href="#on-course">О курсе</a></li>
           <li><a href="#teacher">Преподаватель</a></li>
+            <li><a href="#for">Для кого</a></li>
           <li><a href="#programm">Программа</a></li>
           <li><a href="#place">Место</a></li>
           <li><a href="#price">Цены</a></li>
@@ -85,7 +87,6 @@
           </div>
         </div>
       </div>
-      
     </div>
   </div>
   <!-- TEACHER  -->
@@ -140,6 +141,28 @@
         </div>
       </div>
       
+    </div>
+  </div>
+
+    <!-- FOR WHO -->
+  <div id="for">
+      <a name="for"></a>
+    <div class="container">
+      <div class="section">
+        <h4 class="center-align">Этот курс для Вас, если Вы:</h4>
+        <div class="row">
+          <div class="col s12 m6 push-m3">
+
+            <ul class="flow-text" >
+              <li><i class="material-icons">done</i>Недавно начали рисовать или давно не рисовали или рисуете редко и хотите получить "творческий пинок" и продвигаться дальше</li>
+              <li><i class="material-icons">done</i>Мечтаете больше узнать об акварели </li>
+              <li><i class="material-icons">done</i>Интересуетесь скетчингом и быстрыми зарисовками</li>
+              <li><i class="material-icons">done</i>Устали от рутины и хотите бросить все</li>
+            </ul>
+              <p class="flow-text center-align">Тогда Вам к нам! На три дня погрузитесь в мир красок, хорошей бумаги, изумительной природы и старинной архитектуры!</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   
@@ -201,7 +224,7 @@
 
         <div class="row">
           <div class="col s12">
-            <p class="flow-text center-align">Нам нужно оценить Ваш уровень и разработать индивидуальную программу</p>
+            <p class="flow-text center-align">Индивидуальный подход к каждому участнику</p>
             <div class="center-align">
               <a href="#contact" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Оставить заявку</a>
             </div>
@@ -227,7 +250,7 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>Таруса - город поэтов, писателей и художников. Он буквально пропитан творчеством. Здесь жили Марина Цветаева и Осип Мандельштам, здесь писала Белла Ахмадулина, здесь созидал Константин Паустовский. Свои работы в Тарусе создавали такие художники, как Виктор Борисов-Мусатов, Николай Крымов, Василий Бакшеев и Константин Юон.</p>
+                <p>Таруса - город поэтов, писателей и художников. Он буквально пропитан творчеством. Здесь жили Марина Цветаева и Осип Мандельштам, здесь писала Белла Ахмадулина, здесь созидал Константин Паустовский. Свои работы в Тарусе создавали такие художники, как Виктор Борисов-Мусатов, Николай Крымов, Василий Бакшеев и Константин Юон. Можно сказать, что Таруса - это сердце России, и кто раз здесь побывал, никогда не забудет...</p>
               </div>
             </div>
           </div>
@@ -314,7 +337,6 @@
 {#                      {{ form.contact_email.label_tag }}#}
                     <label for="{{ form.contact_email.id_for_label }}" data-error="Ошибка">Email:</label>
                   </div>
-
 
                   <div class="input-field">
                       {{ form.message.errors }}
