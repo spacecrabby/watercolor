@@ -8,7 +8,7 @@
 
 
 $('a').click(function(){
-    if (+this.href.indexOf('tel') > -1) {
+    if (+this.href.indexOf('tel') === -1) {
         var contact = "#contact";
         if (+this.href.indexOf(contact) > -1) {
             $("html, body").animate({ scrollTop: $(document).height() }, "slow")
