@@ -22,10 +22,10 @@ class ContactForm(forms.Form):
 
     def __init__(self, *args, **kwargs):
         super(ContactForm, self).__init__(*args, **kwargs)
-        self.fields['contact_name'].label = u"Имя".encode('utf-8')
-        self.fields['contact_email'].label = u"Email".encode('utf-8')
-        self.fields['contact_phone'].label = u"Телефон (необязательно)".encode('utf-8')
-        self.fields['message'].label = u"Сообщение".encode('utf-8')
+        self.fields['contact_name'].label = u"Имя"
+        self.fields['contact_email'].label = u"Email"
+        self.fields['contact_phone'].label = u"Телефон (необязательно)"
+        self.fields['message'].label = u"Сообщение"
 
     def form_invalid(self, form):
         return self.render_to_response(self.get_context_data(form=form, anchor='contact'))
