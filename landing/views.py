@@ -1,3 +1,6 @@
+
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 from django.shortcuts import render, redirect
 from landing.forms import ContactForm
 from django.template.loader import get_template
@@ -15,10 +18,10 @@ def landing(request):
 
         if form.is_valid():
 
-            contact_name = request.POST.get('contact_name', '')
-            contact_email = request.POST.get('contact_email', '')
-            contact_phone = request.POST.get('contact_phone', '')
-            message = request.POST.get('message', '')
+            contact_name = request.POST.get('contact_name', '').encode('utf-8')
+            contact_email = request.POST.get('contact_email', '').encode('utf-8')
+            contact_phone = request.POST.get('contact_phone', '').encode('utf-8')
+            message = request.POST.get('message', '').encode('utf-8')
 
             # Email the profile with the
             # contact information

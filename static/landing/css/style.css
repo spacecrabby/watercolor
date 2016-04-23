@@ -7,13 +7,13 @@
  */
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 nav ul a,
@@ -26,10 +26,10 @@ p {
 }
 
 #header {
-    font-size: 4vmin;
-    line-height: 1.5;
-    margin: 0;
-    margin-top: 3%;
+  font-size: 4vmin;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 3%;
 }
 
 #header-small {
@@ -72,7 +72,7 @@ p {
 
 footer.page-footer {
   margin: 0;
-    padding: 0;
+  padding: 0;
 }
 
 .info {
@@ -119,7 +119,7 @@ footer.page-footer {
 }
 
 #for {
-    background: white url("../img/water6.jpg") no-repeat center;
+  background: white url("../img/water6.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -143,8 +143,8 @@ footer.page-footer {
 }
 
 #success {
-    background: white url("../img/water6.jpg") no-repeat center;
+  background: white url("../img/water6.jpg") no-repeat center;
   background-size: cover;
-    height: 85vh;
+  height: 85vh;
 }
 

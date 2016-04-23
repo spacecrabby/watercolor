@@ -1,3 +1,6 @@
+
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 from django import forms
 
 
@@ -18,11 +21,11 @@ class ContactForm(forms.Form):
     )
 
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['contact_name'].label = "Имя"
-        self.fields['contact_email'].label = "Email"
-        self.fields['contact_phone'].label = "Телефон (необязательно)"
-        self.fields['message'].label = "Сообщение"
+        super(ContactForm, self).__init__(*args, **kwargs)
+        self.fields['contact_name'].label = u"Имя"
+        self.fields['contact_email'].label = u"Email"
+        self.fields['contact_phone'].label = u"Телефон (необязательно)"
+        self.fields['message'].label = u"Сообщение"
 
     def form_invalid(self, form):
         return self.render_to_response(self.get_context_data(form=form, anchor='contact'))

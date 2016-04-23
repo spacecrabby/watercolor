@@ -54,7 +54,7 @@ ROOT_URLCONF = 'watercolor.urls'
 TEMPLATES = (
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates', ],
+        'DIRS': ['templates', os.path.join(BASE_DIR, "templates"), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,7 +68,7 @@ TEMPLATES = (
     },
 )
 
-WSGI_APPLICATION = 'watercolor.wsgi.application'
+WSGI_APPLICATION = 'django.wsgi.application'
 
 
 # Database
