@@ -37,9 +37,9 @@ def landing(request):
             content = template.render(context)
 
             email = EmailMessage(
-                "Новая заявка на курсы",
+                u"Новая заявка на курсы",
                 content,
-                'Лэндинг' + ' ',
+                u'Лэндинг' + ' ',
                 ['watercolorsketching@gmail.com'],
                 reply_to=[contact_email],
             )
