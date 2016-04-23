@@ -76,12 +76,8 @@ WSGI_APPLICATION = 'django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'watercol_water72',
-        'USER': 'watercol_water72',
-        'PASSWORD': '74MWdPdI',
-        'HOST': 'postgresql0.locum.ru',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
