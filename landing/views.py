@@ -40,7 +40,7 @@ def landing(request):
                 u"Новая заявка на курсы",
                 content,
                 u'Лэндинг' + ' ',
-                ['watercolorsketching@gmail.com'],
+                ['info@watercolorsketching.ru'],
                 reply_to=[contact_email],
             )
             email.send()
