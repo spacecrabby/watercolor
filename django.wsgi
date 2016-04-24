@@ -11,13 +11,13 @@ import sys
 # Если оставить строку пустой, будет использоваться версия, установленная на сервере.
 
 django_version = '1.9'
-activate_this = '/home/hosting_watercolor/env/water/bin/activate_this.py'
+activate_this = '/home/hosting_watercolor/env/water2/bin/activate_this.py'
 execfile(activate_this, dict(__file__=activate_this))
 # Добавьте нужные вам пути поиска.
 # Если вы получаете ошибку 500 Internal Server Error,
 # скорее всего проблема именно в путях поиска.
 
-sys.path.insert(0, '/home/hosting_watercolor/env/water/lib/python3.4/site-packages')
+sys.path.insert(0, '/home/hosting_watercolor/env/water2/lib/python2.7/site-packages')
 sys.path.insert(0, '/home/hosting_watercolor/projects/watercolor')
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'watercolor.settings'
