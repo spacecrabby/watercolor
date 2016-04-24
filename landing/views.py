@@ -39,7 +39,7 @@ def landing(request):
             email = EmailMessage(
                 u"Новая заявка на курсы",
                 content,
-                u'Лэндинг' + ' ',
+                'info@watercolorsketching.ru',
                 ['info@watercolorsketching.ru'],
                 reply_to=[contact_email],
             )
