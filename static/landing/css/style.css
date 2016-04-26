@@ -142,6 +142,10 @@ footer.page-footer {
   background-size: cover;
 }
 
+#price i {
+  color: #26a69a;
+}
+
 #success {
   background: white url("../img/bckgrnd.jpg") no-repeat center;
   background-size: cover;
