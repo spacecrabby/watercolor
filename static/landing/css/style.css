@@ -95,12 +95,12 @@ footer.page-footer {
 }
 
 #index-banner {
-  background: white url("../img/water7.jpg") no-repeat center;
+  background: white url("../img/bckgrnd.jpg") no-repeat center;
   background-size: cover;
 }
 
 #on-course {
-  background: white url("../img/water1.jpg") no-repeat center;
+  background: white url("../img/bckgrnd.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -114,12 +114,12 @@ footer.page-footer {
 }
 
 #teacher {
-  background: white url("../img/water2.jpg") no-repeat center;
+  background: white url("../img/bckgrnd.jpg") no-repeat center;
   background-size: cover;
 }
 
 #for {
-  background: white url("../img/water6.jpg") no-repeat center;
+  background: white url("../img/bckgrnd.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -128,22 +128,22 @@ footer.page-footer {
 }
 
 #programm {
-  background: white url("../img/water3.jpg") no-repeat center;
+  background: white url("../img/bckgrnd.jpg") no-repeat center;
   background-size: cover;
 }
 
 #place {
-  background: white url("../img/water4.jpg") no-repeat center;
+  background: white url("../img/bckgrnd.jpg") no-repeat center;
   background-size: cover;
 }
 
 #price {
-  background: white url("../img/water5.jpg") no-repeat center;
+  background: white url("../img/bckgrnd.jpg") no-repeat center;
   background-size: cover;
 }
 
 #success {
-  background: white url("../img/water6.jpg") no-repeat center;
+  background: white url("../img/bckgrnd.jpg") no-repeat center;
   background-size: cover;
   height: 85vh;
 }
