@@ -13,7 +13,7 @@ urlpatterns = [
     url(r'^success', views.success, name='success')
 ]
 
-if settings.DEBUG:
+if settings.DEBUG is False:
     from django.conf.urls.static import static
 
     urlpatterns += static(settings.STATIC_URL,
