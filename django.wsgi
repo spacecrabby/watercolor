@@ -29,4 +29,7 @@ if not hasattr(sys, 'real_prefix'):
         sys.path.insert(0, "/opt/django-%s/lib/%s/site-packages/" % (django_version, python_lib))
 
 from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+
 application = get_wsgi_application()
+application = DjangoWhiteNoise(application)
