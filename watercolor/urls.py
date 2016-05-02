@@ -12,9 +12,3 @@ urlpatterns = [
     url(r'^$', views.landing, name='landing'),
     url(r'^success', views.success, name='success')
 ]
-
-if settings.DEBUG is False:
-    from django.conf.urls.static import static
-
-    urlpatterns += static(settings.STATIC_URL,
-                          document_root=settings.STATIC_ROOT)
